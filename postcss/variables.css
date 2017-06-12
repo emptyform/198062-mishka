@@ -1,0 +1,76 @@
+$outline: none;
+/**/
+$basic-fontsize: 15px;
+$page-title-fontsize: 27px;
+$page-title-tabl-fontsize: 43px;
+$page-title-desktop-fontsize: 53px;
+$page-header__text-color: #444444;
+$page-header__text-background: #f9f9f9;
+
+$main-nav-color: #e7e7e7;
+
+$catalog-links__title-fontsize: 19px;
+$catalog-links__title-tablet-fontsize: 20px;
+
+$aboutus-block-title-fontsize: 25px;
+$aboutus-block-title-tablet-fontsize: 43px;
+$aboutus-block-title-desktop-fontsize: 53px;
+$aboutus-block-item-fontsize: 17px;
+$aboutus-block-item-tablet-fontsize: 20px;
+
+$comments-title-fontsize: 25px;
+$comments-title-tablet-fontsize: 43px;
+$comments-title-desktop-fontsize: 53px;
+$comment-name-fontsize: 18px;
+$comment-name-tablet-fontsize: 17px;
+$comment-link-tablet-fontsize: 17px;
+$comment-text-tablet-fontsize: 17px;
+$comment__link-fontsize: 18px;
+
+$comments__feedback-btn-tablet-fontsize: 17px;
+
+$contacts-title-fontsize: 18px;
+$contacts-title-tablet-fontsize: 43px;
+$contacts-title-desktop-fontsize: 53px;
+$contacts-list-tablet-fontsize: 17px;
+$contacts__feedback-btn-tablet-fontsize: 17px;
+
+$developer-contact-fontsize: 19px;
+
+$main-nav-fontsize: 17px;
+$main-nav-grey-tablet-fontsize: 15px;
+
+$order-description-mobile-fontsize: 13px;
+$order-description-fontsize: 17px;
+$order-form-fontsize: 17px;
+$order-form__label-tablet-fontsize: 19px;
+
+$product-title-fontsize: 17px;
+$product-title-tablet-fontsize: 20px;
+$product-description-mobile-fontsize: 13px;
+$product-description-tablet-fontsize: 15px;
+$product__price-tablet-fontsize: 17px;
+
+$video-block-title-fontsize: 17px;
+$video-block-title-tablet-fontsize: 20px;
+$video-block-title-desktop-fontsize: 20px;
+$video-block-description-fontsize: 13px;
+$video-block-description-tablet-fontsize: 15px;
+$video-block-btn-desktop-fontsize: 17px;
+
+$size-form-title-fontsize: 25px;
+
+$week-product-title-fontsize: 25px;
+$week-product-title-tablet-fontsize: 43px;
+$week-product-title-desktop-fontsize: 53px;
+$week-product-description-desktop-fontsize: 17px;
+$week-product-category-title-fontsize: 17px;
+$week-product-price-fontsize: 17px;
+$week-product-price-tablet-fontsize: 20px;
+
+$btn-border: 2px solid #444444;
+$basic-color: #444444;
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1150px;

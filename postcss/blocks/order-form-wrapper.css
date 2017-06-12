@@ -1,0 +1,12 @@
+.order-form-wrapper {
+  padding: 50px 30px;
+  padding-top: 0;
+  padding-bottom: 56px;
+  outline: $outline;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form-wrapper {
+    padding: 0;
+  }
+}

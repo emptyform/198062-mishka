@@ -1,0 +1,222 @@
+.contacts {
+  position: relative;
+  padding: 35px 0;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  display: block;
+  width: 100%;
+  height: 14px;
+  background-image: url("/img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: 100% 14px;
+}
+
+.contacts__title {
+  padding: 30px;
+  font-size: $contacts-title-fontsize;
+  font-weight: 700;
+}
+
+.contacts__list {
+  margin: 30px 0;
+  margin-top: 29px;
+  margin-bottom: 37px;
+  padding: 0;
+  padding: 0 30px;
+  list-style: none;
+  color: $basic-color;
+}
+
+.contacts__list-link {
+  border-bottom: 1px solid #62d1ba;
+  color: $basic-color;
+  text-decoration: none;
+}
+
+.contacts__list-item {
+  display: flex;
+  line-height: 30px;
+
+  &--address {
+    margin-top: 29px;
+  }
+}
+
+.contacts__list-item-name {
+  display: block;
+  margin-right: 30px;
+}
+
+.contacts__list-item-name--address {
+  display: block;
+    margin-right: 31px;
+}
+
+.contacts__list-item-text {
+  width: 142px;
+}
+
+.contacts__map {
+  height: 457px;
+  background-image: url("../../img/map-mobile@1x.jpg");
+}
+
+.contacts__feedback-btn {
+  @mixin btn;
+  width: 258px;
+  margin: 0 auto;
+  margin-top: 38px;
+  border: $btn-border;
+  color: $basic-color;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    padding-top: 87px;
+    padding-bottom: 58px;
+
+    &::before {
+      top: 44px;
+      height: 17px;
+      background-size: 100% 17px;
+    }
+  }
+
+  .contacts__title {
+    position: relative;
+    padding-left: 46px;
+    font-size: $contacts-title-tablet-fontsize;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: 53px;
+      display: block;
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/icon-flag.svg");
+    }
+  }
+
+  .contacts__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-left: 50px;
+    font-size: $contacts-list-tablet-fontsize;
+  }
+
+  .contacts__list-item {
+    display: block;
+
+    &--address {
+      margin-top: 0;
+      padding-right: 57px;
+      font-size: 0;
+    }
+  }
+
+  .contacts__list-item-name {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 19px;
+
+    &--address {
+      vertical-align: top;
+      font-size: $contacts-list-tablet-fontsize;
+    }
+  }
+
+  .contacts__list-link {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+
+  .contacts__list-item-text {
+    display: inline-block;
+    width: auto;
+    padding-left: 5px;
+    vertical-align: top;
+    font-size: $contacts-list-tablet-fontsize;
+  }
+
+  .contacts__map {
+    margin-top: 19px;
+    background-image: url("../../img/map-tablet@1x.jpg");
+  }
+
+  .contacts__feedback-btn {
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 55px;
+    font-size: $contacts__feedback-btn-tablet-fontsize;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+    width: 100%;
+    max-width: 1050px;
+    /*min-height: 620px;*/
+    padding-top: 142px;
+    padding-left: 218px;
+    padding-bottom: 104px;
+
+    &::before {
+      top: 67px;
+      height: 23px;
+      background-size: 100% 23px;
+    }
+  }
+
+  .contacts__title {
+    padding-top: 82px;
+    padding-left: 0;
+    padding-bottom: 24px;
+    font-size: $contacts-title-desktop-fontsize;
+
+    &::after {
+      top: 81px;
+      left: -105px;
+    }
+  }
+
+  .contacts__list {
+    flex-direction: column;
+    order: 1;
+    padding-left: 6px;
+  }
+
+  .contacts__list-item--address {
+    margin-top: 30px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    left: 575px;
+    order: 3;
+    align-self: flex-end;
+    width: 525px;
+    background-image: url("../img/map-desktop@1x.jpg");
+  }
+
+  .contacts__feedback-btn {
+    order: 2;
+    margin: 0;
+    margin-top: 43px;
+    margin-left: 6px;
+    width: 228px;
+  }
+}
