@@ -1,0 +1,242 @@
+.main-nav {
+  position: relative;
+  padding: 0;
+  padding-top: 22px;
+  margin: 0;
+  font-size: $main-nav-fontsize;
+  font-weight: 700;
+  list-style: none;
+
+  &--user {
+    padding-top: 0;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  width: 26px;
+  height: 25px;
+  background-image: url("../../img/icon-menu-open.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+
+  &--opened {
+    background-image: url("../../img/icon-menu-close.svg");
+  }
+}
+
+.main-nav__item {
+  padding: 30px 0;
+  padding-bottom: 25px;
+  min-height: 79px;
+  border-top: 1px solid $main-nav-color;
+  box-sizing: border-box;
+
+  &--cat {
+    padding-top: 27px;
+    padding-right: 22px;
+  }
+
+  &--order {
+    padding-top: 26px;
+    padding-right: 16px;
+  }
+
+  &--search {
+    padding-top: 26px;
+    padding-right: 34px;
+  }
+
+
+  &--cart {
+    position: relative;
+    padding-top: 26px;
+    padding-left: 11px;
+  }
+
+}
+
+.main-nav__link {
+  position: relative;
+  color: #000000;
+  text-decoration: none;
+
+  &--search::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -43px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/icon-search.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--cart::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -45px;
+    display: block;
+    width: 20px;
+    height: 21px;
+    background-image: url("../img/icon-cart.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    order: 3;
+    width: 50%;
+    margin: 0;
+    background-color: #ffffff;
+
+    &--desktop {
+      display: none;
+    }
+
+    &--user {
+      order: 2;
+      justify-content: flex-end;
+      padding-left: 13px;
+      border-left: 1px solid $main-nav-color;
+    }
+
+    &--grey {
+      box-sizing: border-box;
+      padding-top: 9px;
+      font-size: $main-nav-grey-tablet-fontsize;
+      line-height: 24px;
+      background-color: #f9f9f9;
+      border-top: 1px solid $main-nav-color;
+    }
+  }
+
+  .main-nav__item {
+    display: inline-block;
+    padding-bottom: 13px;
+    border: 0;
+
+    &--search {
+      padding-right: 0;
+      font-size: 0;
+    }
+
+    &--cart {
+      padding-top: 31px;
+      padding-bottom: 34px;
+      padding-left: 84px;
+      border-left: 1px solid $main-nav-color;
+    }
+
+    &--cat {
+      padding-top: 8px;
+    }
+
+    &--order {
+      padding-top: 8px;
+      padding-left: 15px;
+    }
+  }
+
+  .main-nav__link--search::before {
+    top: 11px;
+    left: -49px;
+  }
+
+  .main-nav__link--cart::before {
+    left: -52px;
+  }
+
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: auto;
+    justify-content: space-around;
+
+    &--desktop {
+      display: flex;
+      justify-content: flex-start;
+      order: 4;
+      width: 50%;
+      padding-top: 9px;
+      background-color: #f9f9f9;
+    }
+
+    &--grey {
+      order: 1;
+      width: 39%;
+      padding-right: 19px;
+      padding-top: 0;
+      background-color: #ffffff;
+    }
+
+    &--user {
+      order: 3;
+    }
+  }
+
+  .main-nav__item {
+    font-size: $main-nav-fontsize;
+
+    &--cat {
+      padding-right: 34px;
+      padding-top: 30px;
+    }
+
+    &--order {
+      padding-left: 30px;
+      padding-top: 30px;
+    }
+
+    &--search {
+      font-size: 0;
+      padding-left: 68px;
+    }
+
+    &--new {
+      padding: 0;
+      padding-top: 11px;
+      font-size: $main-nav-grey-tablet-fontsize;
+    }
+
+    &--sale {
+      padding: 0;
+      padding-top: 11px;
+      padding-left: 62px;
+      font-size: $main-nav-grey-tablet-fontsize;
+    }
+  }
+
+  .main-nav__link--cart {
+    padding-right: 2px;
+  }
+
+  .main-nav__item--border {
+    border-right: 1px solid $main-nav-color;
+  }
+}

@@ -1,0 +1,46 @@
+.developer-contact {
+  padding-top: 20px;
+  margin-top: 31px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.developer-contact__text {
+  display: inline-block;
+  margin-left: 38px;
+  margin-top: 4px;
+  font-weight: 700;
+  font-size: $developer-contact-fontsize;
+  font-style: normal;
+}
+
+.developer-contact__link {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+}
+
+.developer-contact__link::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 19px;
+  display: block;
+  width: 41px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-image: url("../img/htmlacademy.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .developer-contact {
+    padding: 0;
+    padding-right: 53px;
+    margin-top: 0;
+    border: none;
+
+    &::before {
+      left: 0;
+    }
+  }
+
+}

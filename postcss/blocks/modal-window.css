@@ -1,0 +1,30 @@
+.modal-window {
+  position: absolute;
+  top: 801px;
+  left: 50%;
+  transform: translateX(-160px);
+  display: none;
+  padding: 40px 30px;
+  padding-top: 29px;
+  width: 320px;
+  height: 335px;
+  background-color: #ffffff;
+  border: 1px solid #c7c7c7;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 13px 0px rgba(198,198,198,1);
+}
+
+@media (min-width: $tablet-width) {
+  .modal-window {
+    top: 1388px;
+    transform: translateX(-283px);
+    width: 567px;
+    padding-top: 47px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-window {
+    top: 1791px;
+  }
+}

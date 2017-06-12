@@ -1,0 +1,74 @@
+.comment__text {
+  margin-top: 21px;
+  margin-bottom: 26px;
+  line-height: 30px;
+  font-size: $basic-fontsize;
+  color: $basic-color;
+}
+
+.comment__name {
+  font-size: $comment-name-fontsize;
+  font-weight: 700;
+}
+
+.comment__link {
+  display: block;
+  margin-top: 4px;
+  font-size: $comment__link-fontsize;
+  line-height: 30px;
+  color: $basic-color;
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    order: 3;
+    padding-bottom: 70px;
+    padding-left: 2px;
+  }
+
+  .comment__text {
+    width: 668px;
+    margin-top: 44px;
+    margin-bottom: 58px;
+    font-size: $comment-text-tablet-fontsize;
+  }
+
+  .comment__name {
+    font-size: $comment-name-tablet-fontsize;
+  }
+
+  .comment__link {
+    font-size: $comment-link-tablet-fontsize;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment {
+    padding-bottom: 82px;
+    padding-left: 4px;
+  }
+
+  .comment__text {
+    width: 770px;
+    margin-top: 0;
+    margin-bottom: 39px;
+  }
+
+  .comment__name {
+    font-size: $comment-name-tablet-fontsize;
+  }
+
+  .comment__link {
+    font-size: $comment-link-tablet-fontsize;
+  }
+
+  .comments__switch-button--prev {
+    top: 310px;
+    right: 106px;
+  }
+
+  .comments__switch-button--next {
+    top: 310px;
+    right: 19px;
+  }
+}

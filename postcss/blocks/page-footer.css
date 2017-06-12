@@ -1,0 +1,36 @@
+.page-footer {
+  padding: 20px 30px;
+  padding-top: 5px;
+  padding-bottom: 29px;
+  background-color: #f1f1f1;
+  outline: $outline;
+}
+
+.footer-logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 39px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 670px;
+    margin: 0 auto;
+  }
+
+  .footer-logo {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: 100%;
+    max-width: 1050px;
+  }
+}
