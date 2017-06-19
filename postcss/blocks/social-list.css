@@ -1,18 +1,29 @@
 .social-list {
+  width: 144px;
+  margin: 0 auto;
   padding: 0;
-  padding-bottom: 24px;
-  margin: 0;
-  text-align: center;
+  /*padding-bottom: 24px;*/
+  text-align: left;
   list-style: none;
 }
 
 .social-list__item {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
+  margin-right: 37px;
   font-size: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-.social-list__item::before {
+.social-list__link {
+  display: block;
+}
+
+/*.social-list__item::before {
   content: "";
   position: absolute;
   display: block;
@@ -41,14 +52,22 @@
   width: 39px;
   height: 37px;
   background-image: url("../img/icon-twitter.svg");
-}
+}*/
 
 
 @media (min-width: $tablet-width) {
   .social-list {
     padding: 0;
     padding-left: 120px;
-    padding-bottom: 42px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-list {
+    padding: 0;
+    padding-top: 5px;
+    padding-left: 120px;
     border: none;
   }
 }

@@ -21,11 +21,11 @@ $aboutus-block-item-tablet-fontsize: 20px;
 $comments-title-fontsize: 25px;
 $comments-title-tablet-fontsize: 43px;
 $comments-title-desktop-fontsize: 53px;
-$comment-name-fontsize: 18px;
-$comment-name-tablet-fontsize: 17px;
+$comment-name-fontsize: 17px;
+$comment-name-tablet-fontsize: 18px;
 $comment-link-tablet-fontsize: 17px;
 $comment-text-tablet-fontsize: 17px;
-$comment__link-fontsize: 18px;
+$comment__link-fontsize: 17px;
 
 $comments__feedback-btn-tablet-fontsize: 17px;
 

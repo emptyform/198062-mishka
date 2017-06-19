@@ -41,3 +41,11 @@
     }
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .banner-wrapper__background {
+    background-position: auto -90px;
+    background-size: 1242px 756px;
+  }
+}

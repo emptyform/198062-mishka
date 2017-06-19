@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 30px;
-  padding-top: 37px;
+  padding-top: 21px;
 }
 
 .aboutus-block__title {
@@ -12,6 +12,10 @@
 }
 
 .aboutus-block__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
   font-weight: 700;
@@ -115,8 +119,8 @@
 @media (min-width: $tablet-width) {
   .aboutus-block {
     padding-left: 46px;
-    padding-top: 63px;
-    padding-bottom: 54px;
+    padding-top: 42px;
+    padding-bottom: 58px;
   }
 
   .aboutus-block__title {
@@ -124,44 +128,54 @@
   }
 
   .aboutus-block__list {
-    padding-top: 14px;
+    justify-content: flex-start;
+    padding-top: 16px;
     padding-left: 4px;
     padding-right: 35px;
-    column-count: 2;
   }
 
   .aboutus-block__item {
+    width: 300px;
+    margin-right: 35px;
+    box-sizing: border-box;
     font-size: $aboutus-block-item-tablet-fontsize;
-    line-height: 24px;
+    line-height: 22px;
 
     &--rocket {
+      order: 4;
       padding-top: 108px;
-      width: 295px;
+      margin-right: 0;
     }
 
     &--flower {
+      order: 1;
       padding-top: 84px;
-      width: 205px;
+      padding-right: 70px;
     }
 
     &--heart {
-      padding-top: 107px;
-      width: 215px;
+      order: 5;
+      padding-top: 111px;
+      padding-right: 60px;
     }
 
     &--money {
-      padding-top: 107px;
-      width: 235px;
+      order: 3;
+      padding-top: 111px;
+      padding-right: 40px;
     }
 
     &--rope {
+      order: 2;
       padding-top: 83px;
-      width: 250px;
+      margin-right: 0;
     }
 
     &--gift {
-        padding-top: 107px;
-      width: 240px;
+      order: 6;
+      padding-top: 107px;
+      padding-right: 10px;
+      margin-right: 0;
     }
   }
 
@@ -175,12 +189,12 @@
 
   .aboutus-block__item--money::before {
     left: 1px;
-    top: 55px;
+    top: 58px;
   }
 
   .aboutus-block__item--heart::before {
-    left: 7px;
-    top: 59px;
+    left: 9px;
+    top: 63px;
   }
 
   .aboutus-block__item--rope::before {
@@ -204,16 +218,15 @@
   .aboutus-block {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 97px;
-    padding-left: 12px;
-    padding-bottom: 84px;
+    align-items: flex-start;
+    padding-top: 48px;
+    padding-left: 174px;
+    padding-bottom: 92px;
     width: 100%;
     max-width: 1050px;
   }
-  
+
   .aboutus-block__title {
-    margin-right: 292px;
     font-size: $aboutus-block-title-desktop-fontsize;
   }
 
@@ -223,6 +236,6 @@
   }
 
   .aboutus-block__item {
-    margin-right: 40px;
+    margin-right: 51px;
   }
 }

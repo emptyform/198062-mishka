@@ -66,10 +66,23 @@
 
 .main-nav__link {
   position: relative;
+  display: block;
   color: #000000;
   text-decoration: none;
 
-  &--search::before {
+  &--search svg {
+    position: absolute;
+    left: 33px;
+    top: 5px;
+  }
+
+  &--cart svg {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+  }
+
+  /*&--search::before {
     content: "";
     position: absolute;
     top: 4px;
@@ -79,9 +92,9 @@
     height: 18px;
     background-image: url("../img/icon-search.svg");
     background-repeat: no-repeat;
-  }
+  }*/
 
-  &--cart::before {
+  /*&--cart::before {
     content: "";
     position: absolute;
     top: 3px;
@@ -91,7 +104,7 @@
     height: 21px;
     background-image: url("../img/icon-cart.svg");
     background-repeat: no-repeat;
-  }
+  }*/
 
   &:hover {
     opacity: 0.6;
@@ -114,6 +127,7 @@
       display: none;
     }
 
+
     &--user {
       order: 2;
       justify-content: flex-end;
@@ -129,6 +143,11 @@
       background-color: #f9f9f9;
       border-top: 1px solid $main-nav-color;
     }
+
+    &--dark {
+      background-color: #f1f1f1;
+      border-color: #dfdfdf;
+    }
   }
 
   .main-nav__item {
@@ -137,6 +156,7 @@
     border: 0;
 
     &--search {
+      width: 67px;
       padding-right: 0;
       font-size: 0;
     }
@@ -144,7 +164,7 @@
     &--cart {
       padding-top: 31px;
       padding-bottom: 34px;
-      padding-left: 84px;
+      padding-left: 0;
       border-left: 1px solid $main-nav-color;
     }
 
@@ -158,13 +178,18 @@
     }
   }
 
-  .main-nav__link--search::before {
+  .main-nav__link--search svg {
     top: 11px;
-    left: -49px;
+    left: 18px;
   }
 
-  .main-nav__link--cart::before {
-    left: -52px;
+  .main-nav__link--cart {
+    padding-left: 84px;
+
+    & svg {
+      top: 3px;
+      left: 32px;
+    }
   }
 
 
@@ -184,23 +209,34 @@
       order: 4;
       width: 50%;
       padding-top: 9px;
+      padding-left: 3px;
+      box-sizing: border-box;
       background-color: #f9f9f9;
+      border-top: 1px solid #ececec;
+    }
+    
+    &--dark {
+      background-color: #f1f1f1;
+      border-color: #dfdfdf;
     }
 
     &--grey {
       order: 1;
       width: 39%;
-      padding-right: 19px;
+      padding-right: 13px;
       padding-top: 0;
       background-color: #ffffff;
     }
 
     &--user {
       order: 3;
+      padding-left: 13px;
     }
+
   }
 
   .main-nav__item {
+    position: relative;
     font-size: $main-nav-fontsize;
 
     &--cat {
@@ -232,8 +268,14 @@
     }
   }
 
+  .main-nav__link--search {
+    position: absolute;
+    left: 1px;
+    top: 26px;
+  }
+
   .main-nav__link--cart {
-    padding-right: 2px;
+    padding-left: 83px;
   }
 
   .main-nav__item--border {
