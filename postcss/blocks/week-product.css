@@ -1,11 +1,11 @@
 .week-product {
-  outline: $outline;
   position: relative;
+  padding-bottom: 18px;
 }
 
 .week-product__wrapper {
   padding: 30px;
-  padding-top: 29px;
+  padding-top: 26px;
 }
 
 .week-product::after {
@@ -18,11 +18,11 @@
   height: 14px;
   background-image: url("/img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .week-product__title-wrapper {
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 }
 
 .week-product__title {
@@ -44,6 +44,7 @@
 }
 
 .week-product__description {
+  margin-bottom: 17px;
   line-height: 24px;
   color: $basic-color;
 }
@@ -90,11 +91,12 @@
     position: relative;
     width: 100%;
     min-height: 580px;
+    padding-bottom: 21px;
   }
 
   .week-product::after {
     height: 16px;
-    /*background-size: contain;*/
+    background-position-x: 18px;
   }
 
   .week-product__wrapper {
@@ -103,7 +105,7 @@
     align-items: flex-start;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 768px;
+    /*max-width: 768px;*/
     padding: 50px;
     padding-top: 54px;
     padding-left: 47px;
@@ -143,7 +145,7 @@
   .week-product__img {
     position: absolute;
     right: 51px;
-    bottom: 26px;
+    bottom: 44px;
     z-index: -1;
     order: 4;
     width: 333px;
@@ -154,7 +156,7 @@
     order: 5;
     width: 290px;
     margin-bottom: 53px;
-    margin-top: 4px;
+    margin-top: 6px;
     margin-left: 2px;
   }
 
@@ -174,7 +176,7 @@
     order: 7;
     box-sizing: border-box;
     width: 292px;
-    margin-top: 33px;
+    margin-top: 34px;
     padding-left: 9px;
   }
 }
@@ -184,20 +186,22 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    min-height: 755px;
-    padding-top: 123px;
+    max-width: 1050px;
+    min-height: 715px;
+    margin: 0 auto;
+    padding-top: 70px;
 
     &::after {
-      bottom: 2px;
       height: 23px;
-      left: -50px;
-      width: 1150px;
       background-size: 100% 23px;
+      background-position-x: 29px;
     }
   }
 
   .week-product__wrapper {
+    position: relative;
     max-width: 1050px;
+    padding-left: 49px;
   }
 
   .week-product__title-wrapper {
@@ -236,7 +240,9 @@
 
   .week-product__img {
     position: absolute;
-    right: 0;
+    top: 0;
+    bottom: auto;
+    right: -3px;
     width: 525px;
     height: 636px;
   }

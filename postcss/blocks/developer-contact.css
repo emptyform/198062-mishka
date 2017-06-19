@@ -1,13 +1,14 @@
 .developer-contact {
-  padding-top: 20px;
-  margin-top: 31px;
+  padding-top: 16px;
+  margin-top: 26px;
   border-top: 1px solid #e5e5e5;
 }
 
 .developer-contact__text {
   display: inline-block;
+  vertical-align: middle;
   margin-left: 38px;
-  margin-top: 4px;
+  margin-right: 25px;
   font-weight: 700;
   font-size: $developer-contact-fontsize;
   font-style: normal;
@@ -16,10 +17,12 @@
 .developer-contact__link {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
+  margin-top: 6px;
   font-size: 0;
 }
 
-.developer-contact__link::before {
+/*.developer-contact__link::before {
   content: "";
   position: absolute;
   top: -24px;
@@ -29,12 +32,11 @@
   height: 40px;
   background-repeat: no-repeat;
   background-image: url("../img/htmlacademy.svg");
-}
+}*/
 
 @media (min-width: $tablet-width) {
   .developer-contact {
     padding: 0;
-    padding-right: 53px;
     margin-top: 0;
     border: none;
 
@@ -42,5 +44,10 @@
       left: 0;
     }
   }
+}
 
+@media (min-width: $desktop-width) {
+  .developer-contact {
+    padding-top: 2px;
+  }
 }
