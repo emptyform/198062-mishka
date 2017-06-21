@@ -1,9 +1,10 @@
 .modal-window {
-  position: absolute;
-  top: 801px;
+  position: fixed;
+  top: 50%;
   left: 50%;
-  transform: translateX(-160px);
-  display: none;
+  z-index: 999;
+  transform: translate(-50%, -50%) scale(0);
+  display: block;
   padding: 40px 30px;
   padding-top: 29px;
   width: 320px;
@@ -12,19 +13,16 @@
   border: 1px solid #c7c7c7;
   box-sizing: border-box;
   box-shadow: 0px 5px 13px 0px rgba(198,198,198,1);
+  transition: 0.3s;
+
+  &--show {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .modal-window {
-    top: 1388px;
-    transform: translateX(-283px);
     width: 567px;
     padding-top: 47px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .modal-window {
-    top: 1791px;
   }
 }
