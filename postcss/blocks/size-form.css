@@ -14,12 +14,6 @@
   margin: 0 auto;
 }
 
-.size-form__title {
-  display: block;
-  font-size: 25px;
-  font-weight: 700;
-}
-
 .size-form__subtitle {
   display: block;
   font-size: 15px;
@@ -46,8 +40,6 @@
 .size-form__input+.size-form__label--s::before {
   content: "S";
   position: absolute;
-  top: ;
-  right: ;
   display: block;
   box-sizing: border-box;
   width: 82px;
@@ -55,15 +47,13 @@
   font-size: 17px;
   font-weight: 700;
   text-align: center;
-  line-height: 52px;
+  line-height: 45px;
   border: 2px solid #ececec;
 }
 
 .size-form__input+.size-form__label--m::before {
   content: "M";
   position: absolute;
-  top: ;
-  right: ;
   display: block;
   box-sizing: border-box;
   width: 82px;
@@ -71,15 +61,13 @@
   font-size: 17px;
   font-weight: 700;
   text-align: center;
-  line-height: 52px;
+  line-height: 45px;
   border: 2px solid #ececec;
 }
 
 .size-form__input+.size-form__label--l::before {
   content: "L";
   position: absolute;
-  top: ;
-  right: ;
   display: block;
   box-sizing: border-box;
   width: 82px;
@@ -87,7 +75,7 @@
   font-size: 17px;
   font-weight: 700;
   text-align: center;
-  line-height: 52px;
+  line-height: 45px;
   border: 2px solid #ececec;
 }
 
@@ -107,11 +95,12 @@
   @mixin btn;
   padding: 14px 0;
   width: 100%;
-  margin-top: 84px;
+  margin-top: 82px;
   font-size: 17px;
   background-color: #63d1bb;
   color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 
 
