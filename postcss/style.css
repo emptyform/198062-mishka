@@ -3,8 +3,10 @@
 @import "mixins.css";
 @import "global.css";
 @import "blocks/page-header.css";
+@import "blocks/main.css";
 @import "blocks/page-footer.css";
 @import "blocks/main-nav.css";
+@import "blocks/menu-toggle.css";
 @import "blocks/banner-wrapper.css";
 @import "blocks/page-title.css";
 @import "blocks/catalog-links.css";

@@ -2,16 +2,35 @@
   padding-top: 16px;
   margin-top: 26px;
   border-top: 1px solid #e5e5e5;
+
+  & svg {
+    fill: #63d1bb;
+  }
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+
+  &:active .developer-contact__text {
+    opacity: 0.3;
+  }
 }
 
 .developer-contact__text {
   display: inline-block;
   vertical-align: middle;
+  padding: 7px 0;
   margin-left: 38px;
-  margin-right: 25px;
+  padding-right: 25px;
   font-weight: 700;
   font-size: $developer-contact-fontsize;
   font-style: normal;
+  text-decoration: none;
+  color: #000000;
 }
 
 .developer-contact__link {
@@ -21,18 +40,6 @@
   margin-top: 6px;
   font-size: 0;
 }
-
-/*.developer-contact__link::before {
-  content: "";
-  position: absolute;
-  top: -24px;
-  left: 19px;
-  display: block;
-  width: 41px;
-  height: 40px;
-  background-repeat: no-repeat;
-  background-image: url("../img/htmlacademy.svg");
-}*/
 
 @media (min-width: $tablet-width) {
   .developer-contact {
