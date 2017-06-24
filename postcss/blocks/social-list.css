@@ -1,59 +1,37 @@
 .social-list {
-  width: 144px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 170px;
   margin: 0 auto;
   padding: 0;
-  /*padding-bottom: 24px;*/
   text-align: left;
   list-style: none;
 }
 
 .social-list__item {
   position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 37px;
+  width: 30%;
   font-size: 0;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  text-align: center;
 }
 
 .social-list__link {
   display: block;
+
+  & svg {
+    fill: #221f1f;
+  }
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
-
-/*.social-list__item::before {
-  content: "";
-  position: absolute;
-  display: block;
-  background-repeat: no-repeat;
-}
-
-.social-list__item--insta::before {
-  left: -69px;
-  top: 9px;
-  width: 39px;
-  height: 37px;
-  background-image: url("../img/icon-insta.svg");
-}
-
-.social-list__item--facebook::before {
-  left: -10px;
-  top: 4px;
-  width: 39px;
-  height: 37px;
-  background-image: url("../img/icon-fb.svg");
-}
-
-.social-list__item--twitter::before {
-  left: 41px;
-  top: 9px;
-  width: 39px;
-  height: 37px;
-  background-image: url("../img/icon-twitter.svg");
-}*/
-
 
 @media (min-width: $tablet-width) {
   .social-list {

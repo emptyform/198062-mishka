@@ -26,10 +26,11 @@
 @media (min-width: $tablet-width) {
   .banner-wrapper {
     min-width: 768px;
-    height: 538px;
+    margin-top: 0;
   }
 
   .banner-wrapper__background {
+    min-height: 538px;
     padding-top: 0;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: center -88px;

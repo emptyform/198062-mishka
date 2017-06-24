@@ -7,6 +7,14 @@
 .video-block__wrapper {
   padding-bottom: 32px;
   border: 1px solid #ececec;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .video-block__title {
@@ -55,8 +63,7 @@
   text-align: center;
 }
 
-.video-block__player::before {
-  content: "";
+.video-block__play {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -64,11 +71,24 @@
   display: block;
   width: 101px;
   height: 75px;
+  font-size: 0;
+  border: none;
+  background-color: transparent;
   background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
   background-position: center;
   z-index: 5;
   cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -126,11 +146,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  /*.video-block__wrapper picture::before {
-    z-index: 55;
-    transform: translate(-383px, 189px);
-  }*/
-
   .video-block {
     position: relative;
     display: flex;
@@ -187,11 +202,13 @@
   }
 
   .video-block__description {
+    width: 367px;
     order: 3;
     padding-left: 80px;
     padding-right: 0;
     padding-bottom: 46px;
     padding-top: 0;
+    box-sizing: border-box;
   }
 
   .video-block__order {

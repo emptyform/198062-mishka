@@ -6,14 +6,38 @@
   padding-left: 29px;
   box-sizing: border-box;
   text-decoration: none;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   &--light {
     background-color: #63d1bb;
+
+    &:hover {
+      box-shadow: 0 -5px 0 0 #63d1bb
+    }
   }
 
   &--dark {
     background-color: #56c3b2;
+
+    &:hover {
+      box-shadow: 0 -5px 0 0 #56c3b2
+    }
+  }
+
+  &:hover {
+    padding-top: 20px;
+
+    &::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:active::after {
+    opacity: 0.3;
   }
 }
 
@@ -22,6 +46,7 @@
   position: absolute;
   display: block;
   background-repeat: no-repeat;
+  opacity: 0.5;
 }
 
 .catalog-links__item--light::after {
@@ -32,12 +57,20 @@
   background-image: url("../img/icon-interior.svg");
 }
 
+.catalog-links__item--light:hover::after {
+  top: 19px;
+}
+
 .catalog-links__item--dark::after {
   right: 26px;
   top: 22px;
   width: 60px;
   height: 60px;
   background-image: url("../img/icon-toy.svg");
+}
+
+.catalog-links__item--dark:hover::after {
+  top: 17px;
 }
 
 .catalog-links__title {
@@ -82,6 +115,10 @@
     padding-bottom: 33px;
     padding-left: 36px;
     padding-top: 27px;
+
+    &:hover {
+      padding-top: 22px;
+    }
   }
 
   .catalog-links__item--light::after {
@@ -91,6 +128,14 @@
   .catalog-links__item--dark::after {
     right: 35px;
     top: 32px;
+  }
+
+  .catalog-links__item--light:hover::after {
+    top: 25px;
+  }
+
+  .catalog-links__item--dark:hover::after {
+    top: 27px;
   }
 
   .catalog-links__title {
@@ -118,5 +163,9 @@
     padding-bottom: 31px;
     padding-left: 39px;
     padding-top: 29px;
+
+    &:hover {
+      padding-top: 24px;
+    }
   }
 }
