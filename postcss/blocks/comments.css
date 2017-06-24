@@ -20,6 +20,15 @@
   background-color: #ffffff;
   border: 1px solid #ececec;
   cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .comments__feedback-btn {
@@ -39,9 +48,10 @@
     min-height: 457px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: left top;
+    margin-top: 27px;
     padding: 0 50px;
-    padding-top: 100px;
+    padding-top: 74px;
     padding-left: 46px;
 
   }
@@ -57,26 +67,25 @@
   .comments__title {
     align-self: flex-start;
     order: 1;
+    margin-right: auto;
     font-size: $comments-title-tablet-fontsize;
   }
 
+  .comments__buttons {
+    position: relative;
+    top: -123px;
+    left: 513px;
+    display: flex;
+    justify-content: space-between;
+    order: 4;
+    width: 140px;
+  }
+
   .comments__switch-button {
-    position: absolute;
-    top: 384px;
     margin: 0;
     align-self: flex-end;
     width: auto;
     border: none;
-
-    &--prev {
-      right: 156px;
-      order: 4;
-    }
-
-    &--next {
-      right: 69px;
-      order: 5;
-    }
   }
 
   .comments__feedback-btn {
@@ -99,10 +108,16 @@
   }
 
   .comments__title {
+    margin-bottom: 43px;
     font-size: $comments-title-desktop-fontsize;
   }
 
   .comments__feedback-btn {
     margin-top: 17px;
+  }
+
+  .comments__buttons {
+    top: -135px;
+    left: 724px;
   }
 }

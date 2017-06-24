@@ -1,0 +1,22 @@
+.menu-toggle {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  width: 26px;
+  height: 25px;
+  background-image: url("../img/icon-menu-open.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+
+  &--opened {
+    background-image: url("../img/icon-menu-close.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+.menu-toggle {
+    display: none;
+  }
+}

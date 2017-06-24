@@ -1,35 +1,32 @@
 .main-nav {
   position: relative;
+  max-height: 0;
   padding: 0;
-  padding-top: 22px;
   margin: 0;
   font-size: $main-nav-fontsize;
   font-weight: 700;
   list-style: none;
-
-  &--user {
-    padding-top: 0;
-  }
+  overflow: hidden;
 
   &--desktop {
     display: none;
   }
+
+  &--show {
+    max-height: 500px;
+  }
 }
 
-.main-nav__toggle {
-  position: absolute;
-  top: 24px;
-  right: 28px;
-  width: 26px;
-  height: 25px;
-  background-image: url("../../img/icon-menu-open.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  border: none;
+/*disabled js*/
+.page-header__elements-wrapper--no-js {
+  position: static;
 
-  &--opened {
-    background-image: url("../../img/icon-menu-close.svg");
+  & .menu-toggle {
+    display: none;
+  }
+
+  & .main-nav {
+    max-height: 100%;
   }
 }
 
@@ -61,7 +58,6 @@
     padding-top: 26px;
     padding-left: 11px;
   }
-
 }
 
 .main-nav__link {
@@ -69,42 +65,31 @@
   display: block;
   color: #000000;
   text-decoration: none;
+  transition: 0.3s;
 
   &--search svg {
     position: absolute;
     left: 33px;
     top: 5px;
+    opacity: 0.2;
+  }
+
+  &--search:hover svg {
+    fill: #63d1bb;
+    opacity: 1;
   }
 
   &--cart svg {
     position: absolute;
     left: 20px;
     top: 5px;
+    opacity: 0.2;
   }
 
-  /*&--search::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: -43px;
-    display: block;
-    width: 18px;
-    height: 18px;
-    background-image: url("../img/icon-search.svg");
-    background-repeat: no-repeat;
-  }*/
-
-  /*&--cart::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: -45px;
-    display: block;
-    width: 20px;
-    height: 21px;
-    background-image: url("../img/icon-cart.svg");
-    background-repeat: no-repeat;
-  }*/
+  &--cart:hover svg {
+    fill: #63d1bb;
+    opacity: 1;
+  }
 
   &:hover {
     opacity: 0.6;
@@ -113,6 +98,7 @@
   &:active {
     opacity: 0.3;
   }
+
 }
 
 @media (min-width: $tablet-width) {
@@ -191,11 +177,6 @@
       left: 32px;
     }
   }
-
-
-  .main-nav__toggle {
-    display: none;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -214,7 +195,7 @@
       background-color: #f9f9f9;
       border-top: 1px solid #ececec;
     }
-    
+
     &--dark {
       background-color: #f1f1f1;
       border-color: #dfdfdf;
