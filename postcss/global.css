@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/opensans.woff2") format('woff2'),
-       url("../fonts/opensans.woff") format('woff');
+        url("../fonts/opensans.woff") format('woff');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/opensansbold.woff2") format('woff2'),
-       url("../fonts/opensansbold.woff") format('woff');
+        url("../fonts/opensansbold.woff") format('woff');
 }
 
 body {
@@ -20,7 +20,7 @@ body {
   background-color: #ffffff;
   font-size: $basic-fontsize;
   font-family: "Open Sans","Arial",sans-serif;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 img {
