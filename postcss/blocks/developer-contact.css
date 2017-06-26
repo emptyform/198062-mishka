@@ -1,6 +1,7 @@
 .developer-contact {
   padding-top: 16px;
   margin-top: 26px;
+  text-align: center;
   border-top: 1px solid #e5e5e5;
 
   & svg {
@@ -24,7 +25,6 @@
   display: inline-block;
   vertical-align: middle;
   padding: 7px 0;
-  margin-left: 38px;
   padding-right: 25px;
   font-weight: 700;
   font-size: $developer-contact-fontsize;
@@ -50,6 +50,10 @@
     &::before {
       left: 0;
     }
+  }
+
+  .developer-contact__text {
+    margin-left: 45px;
   }
 }
 
