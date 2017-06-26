@@ -57,6 +57,7 @@
     position: relative;
     padding-top: 26px;
     padding-left: 11px;
+    white-space: nowrap;
   }
 }
 
